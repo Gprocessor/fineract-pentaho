@@ -80,8 +80,8 @@ public class PentahoReportingProcessServiceImpl implements ReportingProcessServi
     private final String mifosBaseDir = System.getProperty("user.home") + File.separator + ".mifosx";
     private final DatabasePasswordEncryptor databasePasswordEncryptor;
 
-    @Value("${FINERACT_PENTAHO_REPORTS_PATH}")
-    private String fineractPentahoBaseDir;
+    //@Value("${FINERACT_PENTAHO_REPORTS_PATH}")
+    private String fineractPentahoBaseDir = System.getProperty("user.home") + File.separator + ".fineract-pentaho";
 
     private final PlatformSecurityContext context;
     private final DataSource tenantDataSource;
